@@ -32,6 +32,10 @@ class PacketRecord:
     dst_port: int
     size: int
     summary: str
+    payload: bytes = b""
+    tls_sni: str = ""
+    dns_query: str = ""
+    info: str = ""  # human-readable protocol detail
 
 
 @dataclass
@@ -43,3 +47,4 @@ class Connection:
     bytes_total: int = 0
     first_seen: datetime = field(default_factory=datetime.now)
     last_seen: datetime = field(default_factory=datetime.now)
+    domain: str = ""  # populated from TLS SNI or DNS
