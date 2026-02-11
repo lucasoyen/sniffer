@@ -28,7 +28,7 @@ Built with [Scapy](https://scapy.net/) and [Textual](https://textual.textualize.
 ## Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/sniffer.git
+git clone https://github.com/lucasoyen/sniffer.git
 cd sniffer
 python -m venv .venv
 ```
